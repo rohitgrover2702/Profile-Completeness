@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="status_block">
+    <div class="progress_block">
+      <div class="progress">
+        <div *ngIf="displayProgress" class="{{classToAdd}}">
+          {{progressCount$}}/5
+        </div>
+        <svg class="progress-ring" width="120" height="120">
+          <circle class="progress-ring__circle" stroke-width="6" fill="transparent" r="55" cx="60" cy="60" />
+        </svg>
+      </div>      
+    </div>
+    <div class="prog_info">        
+        <p>This is the profile completeness circle</p>
+      </div>
+  </div>
+</div>
